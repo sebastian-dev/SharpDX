@@ -8,6 +8,7 @@
     <AssemblyTitle>SharpDX</AssemblyTitle>
     <Title>SharpDX</Title>
     <Description>Core assembly for all SharpDX assemblies.</Description>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +20,10 @@
     <Compile Include="..\SharedAssemblyInfo.cs">
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="SharpGenTools.Sdk" Version="1.1.3-ci499" />
   </ItemGroup>
 
   <Import Project="../MappingFiles.props" />
