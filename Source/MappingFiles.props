@@ -17,7 +17,4 @@
         <SharpGenMapping Remove="@(LegacyMapping->'$(MSBuildThisFileDirectory)%(Identity)/**/Mapping*.xml')" />
         <SharpGenExternalDocs Include="$(MSBuildThisFileDirectory)SharpDX*/Documentation/CodeComments.xml" />
     </ItemGroup>
-    <ItemGroup Condition="'$(AppType)' == 'STORE_APP'">
-        <SharpGenMapping Remove="@(NoStoreMapping->'$(MSBuildThisFileDirectory)%(Identity)/**/Mapping*.xml')" />
-    </ItemGroup>
 </Project>

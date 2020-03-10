@@ -3,7 +3,7 @@
     Condition="'$(SharpDXLegacy)' != 'true'"
     BeforeTargets="AddGeneratedCSharpFilesToCompilation"
     AfterTargets="GenerateCSharp">
-    
+
     <ItemGroup>
       <Compile Remove="Generated/**/*.cs" />
       <Compile Include="$(SharpGenGeneratedCodeFolder)/**/*.cs" Condition="'@(SharpGenMapping)' == ''" />
